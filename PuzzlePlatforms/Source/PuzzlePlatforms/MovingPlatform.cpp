@@ -12,6 +12,7 @@ void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if (!HasAuthority()) { return; }
 	FVector Location = GetActorLocation();
 	Location += FVector(5 * DeltaTime, 0, 0);
 	SetActorLocation(Location);
