@@ -13,5 +13,13 @@ UCLASS()
 class PUZZLEPLATFORMS_API AMovingPlatform : public AStaticMeshActor
 {
 	GENERATED_BODY()
+
+public:
+
+	AMovingPlatform();
+
+protected:
+
+	virtual void Tick(float DeltaTime) override;
 	
 };
