@@ -25,7 +25,7 @@ public:
 
 private:
 
-	UPROPERTY()
+	UPROPERTY(VisibleAnywhere)
 	class UBoxComponent* TriggerVolume;
 
 };
