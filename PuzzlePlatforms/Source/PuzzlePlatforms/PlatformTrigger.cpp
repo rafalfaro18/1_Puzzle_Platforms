@@ -16,8 +16,6 @@ APlatformTrigger::APlatformTrigger()
 
 	RootComponent = TriggerVolume;
 
-	TriggerVolume->OnComponentBeginOverlap.AddDynamic(this, &APlatformTrigger::OnOverlapBegin);
-
 }
 
 // Called when the game starts or when spawned
@@ -25,6 +23,7 @@ void APlatformTrigger::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	TriggerVolume->OnComponentBeginOverlap.AddDynamic(this, &APlatformTrigger::OnOverlapBegin);
 }
 
 // Called every frame
