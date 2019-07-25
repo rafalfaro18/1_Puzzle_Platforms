@@ -11,3 +11,7 @@ void UPuzzlePlatformsGameInstance::Init() {
 	Super::Init();
 	UE_LOG(LogTemp, Warning, TEXT("GameInstance Init"));
 }
+
+void UPuzzlePlatformsGameInstance::Host() {
+
+}
