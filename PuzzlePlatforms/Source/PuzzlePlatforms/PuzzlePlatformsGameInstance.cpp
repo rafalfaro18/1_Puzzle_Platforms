@@ -3,3 +3,11 @@
 
 #include "PuzzlePlatformsGameInstance.h"
 
+UPuzzlePlatformsGameInstance::UPuzzlePlatformsGameInstance(const FObjectInitializer & ObjectInitializer) {
+	UE_LOG(LogTemp, Warning, TEXT("GameInstance Constructor"));
+}
+
+void UPuzzlePlatformsGameInstance::Init() {
+	Super::Init();
+	UE_LOG(LogTemp, Warning, TEXT("GameInstance Init"));
+}
